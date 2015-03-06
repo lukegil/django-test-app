@@ -1,0 +1,21 @@
+<head>
+<link rel="stylesheet" type="text/css" href="http://storage.googleapis.com/lacgstatic-files/style.css">
+</head>
+<body>
+  <div class="position">
+    <div class="main-block">
+      <div class="input-section"> 
+	<h1> {{ header }} </h1>
+	<form method="post" action="{% url 'submit_question' %}">
+	{% csrf_token %}
+	<p style="text-color : #fff;" Ask your your own question:<br>
+      <input class="input-box" type="text" name="new_question">
+      <div>
+	<input class="button" type="submit" value="submit">
+	</div>
+	</form>
+  </div>
+</div>
+</div
+</body>
+

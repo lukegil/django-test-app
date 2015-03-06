@@ -1,0 +1,60 @@
+
+body { 
+  background-color : #1b3146; 
+}
+
+.main-block {
+  background-color : #000;
+  position : relative;
+}
+
+.input-section {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  margin: 30px 0 0 -170px;
+  /*padding-left : 20%;*/
+}
+
+h1 {
+    color : #ffffff;
+    font-family : Optima, Verdana, sans-serif; 
+    text-align : center;
+}
+
+input {
+  width : 300px;
+  height : 25px;
+  border-radius : 2px;
+}
+input:focus {
+  outline:0;
+}
+
+.input-box {
+  margin-bottom : 5px;
+  border : 1px solid #000;
+}
+.input-box:click{
+    background-color:transparent
+}
+
+.button {
+  border : 1px solid #000;
+  height : 30px;
+  width : 304px;
+  box-shadow : 0px 2px 7px 2px #162738 ;
+  cursor : pointer;
+}
+
+.button:hover{  
+  box-shadow : 0px 2px 15px 4px #162738 ;
+}
+
+.button:active{
+  box-shadow : 0px 2px 1px 1px #162738;  
+  border : 1px solid #000
+}
+
+
+

@@ -1,0 +1,24 @@
+
+<head>
+<link rel="stylesheet" type="text/css" href="http://storage.googleapis.com/lacgstatic-files/style.css">
+</head>
+{% if random_question %}
+<body>
+<div class="position">
+<div class="main-block">
+  <div class="input-section"> 
+    <h1>{{ random_question.question_text }}</h1>
+      <form method="post" action="{% url 'submit_results' %}">
+	{% csrf_token %}
+         <input  type="text" class="input-box" name="question_response" id="question_response">
+      <div>
+        <input class="button" type="submit" value="Submit">
+      </div>
+    </div>
+   </div>
+</div>
+</body>
+
+{% else %}
+	<p>Aw crap. No Questions.</p>
+{% endif %}
